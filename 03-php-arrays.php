@@ -47,6 +47,21 @@
     );
     ?>
 
+    <h3>Acesso e saída de dados</h3>
+
+    <p>O filme <?=$filme["titulo"]?> foi lançado em <?=$filme["ano"]?>.</p>
+
+    <p> <?=$livro["titulo"]?> é um otimo livro.</p>
+
+    <hr>
+
+    <h2>Comandos úteis para analise/depuração de arrys</h2>
+
+    <h3><code>print_r()</code> e <code>var_dump()</code></h3>
+
+    <pre>  <?=print_r($bandas)?></pre>
+
+    <pre><?=var_dump($bandas)?></pre>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </div>

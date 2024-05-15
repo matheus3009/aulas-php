@@ -10,7 +10,8 @@
     <div class="container">
         <h1>Variaveis e constantes</h1>
         <hr>
-        
+
+        <h2>declaração e saída de dados usando <code>echo</code></h2>
         <?php
         //variaveis usa ($)
         $curso = "Programador Web";
@@ -30,6 +31,17 @@
         echo AUTOR."trabalha na empresa".EMPRESA;
         echo "<p>".AUTOR."trabalha na empresa".EMPRESA."</p>";
         ?>
+            <hr>
+
+            <h2>saída de dados simplificada/direta</h2>
+
+
+            <p>Estamos no <?=$curso?> em <?=$ano?> .</p>
+
+            <p><?=AUTOR?> trabalha na empresa <?=EMPRESA?> </p>
+
+
+
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

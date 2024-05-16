@@ -11,51 +11,59 @@
 
 <body>
     <div class="container">
-        <h1>condicionais</h1>
+        <h1>condicionais (Versão refatorada)</h1>
         <hr>
 
         <h2>Simples (não tem o <code>else</code> )</h2>
 
         <?php
-        //simples
+        
         $numero = 50;
         if ($numero < 100) {
-            echo "<p>Condição é verdadeira/true!</p>";
+        ?>
+            <p>Condição é verdadeira/true!</p>
+        <?php
         };
         ?>
         <hr>
         <h2>Composta (usa <code>if/else</code>)</h2>
 
         <?php
-        /* Controle de Estoque */
+        
         $produto = "TV";
-        $qtdEmEstoque = 0; //o que temos no momento
-        $qtdCritica = 2; //mínimo
+        $qtdEmEstoque = 0; 
+        $qtdCritica = 2;
         ?>
 
         <h3>Produto: <?= $produto ?></h3>
         <h3>Estoque: <?= $qtdEmEstoque ?></h3>
 
         <?php
-        /* Se a quantidade em estoque for abaixo da quantidade crítica, o sisitema deve avisar e pedir pra repor.  */
-        if ($qtdEmEstoque < $qtdCritica) {
-            echo "<p class=\"alert alert-warning\">É necessário repor</p>";
+       
+        if ($qtdEmEstoque < $qtdCritica) { 
+        ?>
 
+            <p class="alert alert-warning">É necessário repor</p>
+
+            <?php
             if ($qtdEmEstoque == 0) {
-                echo "<p class=\"alert alert-danger\">Agora!!</p>";
+                ?>
+                <p class="alert alert-danger">Agora!!</p>
+
+            <?php
             }
+            
         } else {
-            /*  Caso contrario, dizer que o estoque está normal */
-            echo "<p class= \"alert alert-success\">Estoque normal.</p>";
+          ?>
+            <p class= "alert alert-success">Estoque normal.</p>
+        <?php
         };
-
-
         ?>
 
         <h2>Encadeada (usa <code>if, else, elseif</code> )</h2>
 
         <?php
-        /* Verificando o produto e atribuindo diferentes garantias (em anos)  */
+        
         if ($produto == "Ultrabook") {
             $garantia = 5;
         } elseif ($produto == "Geladeira") {

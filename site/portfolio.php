@@ -16,9 +16,16 @@
     </header>
     <main>
         <article>
-        <h2>Bem-vindo(a)</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur reiciendis perspiciatis veniam quae minus voluptates? Quidem, animi? Asperiores dolores repellat repellendus! Quo officia voluptates voluptate animi ullam laudantium autem facilis?</p>
-        </article>
+        <h2>Nossos trabalhos</h2>
+        <details>
+            <summary>Game</summary>
+            <p>lorem ipsum</p>
+        </details>
+        <details>
+            <summary>Web Site</summary>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </details>
+       </article>
     </main>
     <footer>
         <h2>Site criado como exemplo</h2>

@@ -1,4 +1,8 @@
-<?php include "cabecalho.php";?>
+<?php
+$title = "Portifolio";
+include "cabecalho.php";
+
+?>
         <h2>Nossos trabalhos</h2>
         <details>
             <summary>Game</summary>
@@ -8,4 +12,52 @@
             <summary>Web Site</summary>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </details>
-  <?php include "rodape.php";?>
+  <?php include "rodape.php";
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ?>

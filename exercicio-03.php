@@ -8,15 +8,14 @@
         li:nth-child(odd){
             border: solid black;
             background-color: hotpink;
-            padding: 2px;
+        
         }
+
     </style>
-
-
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="container">
     <h1>Exercício 3</h1>
     <hr>
     <?php
@@ -33,6 +32,7 @@
     </ol>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

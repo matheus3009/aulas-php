@@ -1,3 +1,4 @@
+<?php include "recursos.php";?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,6 +10,11 @@
 
 </head>
 <body>
+    <div class="alert alert-info">
+        <p>Empresa: <?=EMPRESA?></p>
+        <p>Ano fiscal: <?=$anoFiscal?></p>
+    </div>
+
     <div class="container">
     <h1>Arrays</h1>
     <hr>

@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 04 (formulário)</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: lightblue;
+        }
+
+        hr{display: none;}
+
+        form{
+            background-color: white;
+            margin-top: 20vh;
+            border: solid black;
+            border-radius: 8px;
+            box-shadow: 20%;
+            width: 50vh;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-left: 25%;
+        }
+
+    </style>
 </head>
+
 <body>
     <h1>Exercício 04 (formulário)</h1>
     <hr>
-    <form autocomplete="off" action="" method="">
+    <form autocomplete="off" action="exercicio04-processamento.php" method="post">
         <p>
             <label for="produto">Produto:</label>
             <input required type="text" name="produto" id="produto">
         </p>
-     
-		<p>
-			<label for="fabricante">Fabricante:</label>
-			<select name="fabricante" id="fabricante">
-				<!-- não apague este <option> vazio -->
-				<option value=""></option>
-				
-				
-				<!-- Faça aqui a programação necessária para obter os dados de um array (criado por você)
+
+        <p>
+            <label for="fabricante">Fabricante:</label>
+            <select name="fabricante" id="fabricante">
+                <!-- não apague este <option> vazio -->
+                <option value=""></option>
+
+
+                <!-- Faça aqui a programação necessária para obter os dados de um array (criado por você)
 				e colocá-los (cada um) dentro de uma tag <option>. -->
                 <?php
                 $fabricantes = ["Samsung", "apple", "Dell", "Positivo"];
 
-                foreach ($fabricantes as $fabricante) {   ?>	
-                <option value=""><?=$fabricante?></option>
-                <?php 
+                foreach ($fabricantes as $fabricante) {   ?>
+                    <option><?= $fabricante ?></option>
+                <?php
                 } ?>
-             
 
-			</select>
-		</p>
 
-		<p>
+            </select>
+        </p>
+
+        <p>
             <label for="preco">Preço:</label>
             <input required type="number" name="preco" id="preco" min="100" max="10000" step="0.01">
         </p>
@@ -48,4 +74,5 @@
         <button type="submit" name="enviar">Enviar dados</button>
     </form>
 </body>
+
 </html>

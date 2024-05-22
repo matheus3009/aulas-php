@@ -11,23 +11,51 @@
             background-color: lightblue;
         }
 
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+            border-bottom: solid black;
+            margin: auto;
+        }
+
         hr{display: none;}
 
-        form{
-            background-color: white;
+        form {
             margin-top: 20vh;
-            border: solid black;
-            border-radius: 8px;
-            box-shadow: 20%;
-            width: 50vh;
-            height: 50vh;
+            padding: 5vh 0vh;
+            background-color: white;
+            color: black;
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
+            width: 50%;
             margin-left: 25%;
+            border-radius: 8px;
+            border: solid black;
+            box-shadow: black 20px 10px;
         }
 
+        label{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        input{
+            border: solid black 2px;
+        }
+
+        select{
+            border: solid black 2px;
+        }
+
+        textarea{
+            border: solid black 2px;
+        }
+
+        button{
+            border: solid black 2px;
+            background-color: white;
+            color: black;
+        }
     </style>
 </head>
 
